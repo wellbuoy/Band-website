@@ -1,0 +1,10 @@
+{% extends 'band/base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1 style="color: white;">Welcome to Imagine Dragons Website</h1>
+    <p style="color: white;">To learn more about us, please visit our <a style="color: blue;" href="{% url 'about' %}">About</a> page.</p>
+    <p1 style="color: white;">For more information on upcoming events, please visit our <a style="color: blue;" href="{% url 'events' %}">Events</a> page.</p1>
+    <p></p>
+    <img src="{% static 'images/group.jpg' %}" style=" width: 330px; height: 250px;"  alt="Imagine Dragons">
+{% endblock %}

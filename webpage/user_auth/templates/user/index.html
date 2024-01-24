@@ -1,0 +1,10 @@
+{% extends 'user/base.html' %}
+{% load static%}
+
+{% block content %}
+    <h1 style="color: black;"><b>Welcome to Imagine Dragons website</b></h1>
+    <h2 style="color: rgb(8, 8, 8);">> <b>Please <a style="color: blue;" href="{% url 'login' %}">login</a> to access this website</b></h2>
+    <h2 style="color: rgb(12, 12, 12);">> <b>If it's your first time visiting this website, Please <a style="color: blue;" href="{% url 'register' %}">register</a>  then login</b></h2>
+    
+
+{% endblock %}

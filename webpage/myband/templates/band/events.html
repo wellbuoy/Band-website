@@ -1,0 +1,18 @@
+{% extends 'band/base.html' %}
+{% load static%}
+
+{% block content %}
+    <h1 style="color: rgb(21, 243, 76);">Upcoming Events !</h1>
+    <ul>
+    {% for event in events %}
+        <li>
+            <h2 style="color: white;">{{ event.title }}</h2>
+            <p style="color: white;"><strong>Date:</strong> {{ event.date }}</p>
+            <p style="color: white;">{{ event.description }}</p>
+            <img src="{% static 'images/ban.jpg' %}" style=" width: 300px; height: 250px;"  alt="Imagine Dragons">
+        </li>
+    {% empty %}
+        <h2 style="color: white;">> No events are available.</h2>
+    {% endfor %}
+    </ul>
+{% endblock %}
